@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>電卓</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calc">
+    <div id="display" class="display">0</div>
+
+    <div class="keys">
+      <!-- 1行目 -->
+      <button class="key" data-type="number" data-value="7">7</button>
+      <button class="key" data-type="number" data-value="8">8</button>
+      <button class="key" data-type="number" data-value="9">9</button>
+      <button class="key op" data-type="operator" data-value="+">+</button>
+
+      <!-- 2行目 -->
+      <button class="key" data-type="number" data-value="4">4</button>
+      <button class="key" data-type="number" data-value="5">5</button>
+      <button class="key" data-type="number" data-value="6">6</button>
+      <button class="key op" data-type="operator" data-value="-">-</button>
+
+      <!-- 3行目 -->
+      <button class="key" data-type="number" data-value="1">1</button>
+      <button class="key" data-type="number" data-value="2">2</button>
+      <button class="key" data-type="number" data-value="3">3</button>
+      <button class="key op" data-type="operator" data-value="*">*</button>
+
+      <!-- 4行目 -->
+      <button class="key" data-type="number" data-value="0">0</button>
+      <button class="key" data-type="number" data-value="00">00</button>
+      <button class="key" data-type="dot" data-value=".">.</button>
+      <button class="key op" data-type="operator" data-value="/">/</button>
+
+      <!-- 5行目（横に広い） -->
+      <button class="key wide" data-type="ac" data-value="AC">AC</button>
+      <button id="equalBtn" class="key wide eq" data-type="equal" data-value="=">=</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

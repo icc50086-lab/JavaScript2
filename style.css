@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+}
+
+.calc {
+  width: min(600px, 92vw);   /* ← iPad miniでも小さく見えにくい */
+  border: 1px solid #ddd;
+  padding: 8px;              /* ← どの端末でも同じにする */
+}
+
+.display {
+  height: 64px ;
+  background: #111;
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 14px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.key {
+  height: 60px ;
+  font-size: 22px;
+  background: #efefef;
+  border: 2px solid #cfcfcf;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.key.is-active {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26,115,232,.25);
+}
+
+.op {
+  font-weight: 800;
+}
+
+.wide {
+  grid-column: span 2; /* 横に2マス分 */
+}
+
+.eq {
+  font-weight: 800;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+}
+
+.calc {
+  width: min(600px, 92vw);   /* ← iPad miniでも小さく見えにくい */
+  border: 1px solid #ddd;
+  padding: 8px;              /* ← どの端末でも同じにする */
+}
+
+.display {
+  height: 45px ;
+  background: #111;
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+
+.key {
+  height: 35px ;
+  font-size: 20px;
+  background: #efefef;
+  border: 2px solid #cfcfcf;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.key.is-active {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26,115,232,.25);
+}
+
+.op {
+  font-weight: 800;
+}
+
+.wide {
+  grid-column: span 2; /* 横に2マス分 */
+}
+
+.eq {
+  font-weight: 800;
+}
+
+}
+
+
+
+@media screen and (min-width: 701px) and (max-width: 1024px){
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+}
+
+.calc {
+  width: min(740px, 92vw);   /* ← iPad miniでも小さく見えにくい */
+  border: 1px solid #ddd;
+  padding: 8px;              /* ← どの端末でも同じにする */
+}
+
+.display {
+  height: 64px ;
+  background: #111;
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 14px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.key {
+  height: 60px ;
+  font-size: 32px;
+  background: #efefef;
+  border: 2px solid #cfcfcf;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.key.is-active {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26,115,232,.25);
+}
+
+.op {
+  font-weight: 800;
+}
+
+.wide {
+  grid-column: span 2; /* 横に2マス分 */
+}
+
+.eq {
+  font-weight: 800;
+}
+
+}
