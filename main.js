@@ -18,9 +18,11 @@ function format(n) {
 }
 
 function render() {
-  // 演算子を押した直後は「5*」のように表示したい
-  if (operator !== null && waitingNext && previous !== null) {
-    displayEl.textContent = `${format(previous)}${operator}`;
+  // previous と operator があるなら式表示（入力途中も）
+  if (operator !== null && previous !== null) {
+    const left = format(previous);
+    const right = waitingNext ? "" : current; // 演算子直後は右辺まだ空
+    displayEl.textContent = `${left}${operator}${right}`;
   } else {
     displayEl.textContent = current;
   }
